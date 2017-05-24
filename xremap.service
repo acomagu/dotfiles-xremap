@@ -3,7 +3,7 @@ Description=xremap
 
 [Service]
 KillMode=process
-ExecStart=xremap /home/k0kubun/.xremap
+ExecStart=/usr/bin/env xremap %h/.config/xremap/config.rb
 ExecStop=/usr/bin/killall xremap
 Restart=always
 Environment=DISPLAY=:0.0
